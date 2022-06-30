@@ -1,4 +1,13 @@
 fn main() {
-    let s1: String = String::from("hello");
-    println!("{s1} world");
+    #[derive(Debug)]
+    struct Person {
+        name: String,
+        age: u32,
+    };
+
+    let p = Person {
+        name: String::from("John"),
+        age: 12,
+    };
+    println!("{:?}", p);
 }
